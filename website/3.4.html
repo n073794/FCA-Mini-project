@@ -1,0 +1,576 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            An In-Depth Analysis on Educational and Career Goals
+        </title>
+    </head>
+        <body>
+<font face="Book Antiqua">
+<table width="100%" height="100%">
+<tr>
+<td width="375px" valign="top" bgcolor="e6e6fa">
+                <nav><br>
+                    <center>INDEX</center>
+                    <ul>
+                        <a href="1.1.html"><h4>Introduction</h4></a>
+                        <li><a href="1.1.html">1.1 Objective</a></li>
+                        <li><a href="1.2.html">1.2 Organization</a></li>
+                        <li><a href="1.3.html">1.3 Contributions</a></li>
+                    </ul>
+                    <ul>
+                        <a href="2.1.html"><h4>Data Organization</h4></a>
+                        <li><a href="2.1.html">2.1 Data Description</a></li>
+                        <li><a href="2.2.html">2.2 Technical Description</a></li>
+                        <li><a href="2.3.html">2.3 Workflow Diagram</a></li>
+                    </ul>
+                    <ul>
+                        <a href="3.1.html"><h4>Data Analysis</h4></a>
+                        
+                        <li><a href="3.1.html">3.1 Confidence and Skill</a></li>
+                        <li><a href="3.2.html">3.2 Gender and Post-Degree Choices</a></li>
+                        <li><a href="3.3.html">3.3 Gender and External Influence</a></li>
+                        <li><a href="3.4.html">3.4 Confidence and Personal Interest</a></li>
+                        <li><a href="3.5.html">3.5 Charts Used:</a></li>
+                      </ul>
+                    <ul>
+                        <a href="4.1.html"><h4>Inferences and Key Insights</h4></a>
+                        
+                        <li><a href="4.1.html">4.1 Confidence and Skill</a></li>
+                        <li><a href="4.2.html">4.2 Gender and Post-Degree Choices</a></li>
+                        <li><a href="4.3.html">4.3 Gender and External Influence</a></li>
+                        <li><a href="4.4.html">4.4 Confidence and Personal Interest</a></li>
+                    </ul>
+                    <ul>
+                        <a href="5.1.html"><h4>Conclusion</h4></a>
+                    </ul>
+                    <ul>
+                        <a href="6.1.html"><h4>References</h4></a>
+                        
+                    </ul>
+            </nav>
+</td>
+<td width="50px"></td>
+<td valign="top">
+<!-- CONTENT FROM HERE-->
+<h4>3.4 Correlation Between Confidence and Personal Interest</h4>
+<p align="justify">
+    This topic examines how students' personal interest in their chosen degree program influences their confidence in achieving career goals and succeeding in their field of study. By analyzing survey data, this study seeks to identify any significant relationships between a student's level of interest in their subject and their self-assurance regarding future career prospects. The findings can provide insights into the importance of passion and personal motivation in fostering confidence, which may inform strategies for improving student engagement and career readiness.
+<br><br>
+To explore this topic, the following questions from the survey were tackled:
+<br>•	How confident are you in gaining employment in your field after graduation?
+<br>•	How confident are you about achieving your career goals?
+<br>•	Did you choose this degree based on personal interest?
+
+<br><br>
+The responses for these questions were summarized in a table using various formulas:
+<br><br>
+<table border="1" align="center">
+    <tr>
+      <th>Confidence</th>
+      <th>Did you choose this degree based on personal interest? YES</th>
+      <th>Did you choose this degree based on personal interest? NO</th>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>7</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>5</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>10</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>14</td>
+      <td>0</td>
+    </tr>
+</table><br>
+<center><i><font size="2" color="grey">Table 19: Confidence and Personal Interest</font></i></center><br>
+<br>
+This table was created using the following functions:
+<br><br>
+•	SUM 
+<br><br>
+The SUM function in Excel is used to calculate the total of two or more numbers, either from individual cells or a range of cells. It’s one of the most basic and widely used functions for arithmetic operations.
+<br><br>
+The syntax of the SUM function is: 
+
+
+<br><br>
+<table border="1" align="center"><th>=SUM(number1, [number2], …)</th></table><br>
+<center><i><font size="2" color="grey">Formula 13: Confidence and Personal Interest: SUM – Syntax</font></i></center><br>
+
+<b>number1:</b> The first value or cell reference to include in the sum.
+<br><br>
+<b>number2, ...:</b> Additional values or cell references (optional).
+<br><br>
+Here, we use the SUM function to combine employment and career goal confidence - to measure the total confidence for each respondent as ‘SUM of Confidence levels’ in column M as:
+
+<br><br>
+<table border="1" align="center"><th>=SUM(D2, E2)</th></table><br>
+<center><i><font size="2" color="grey">Formula 14: Confidence and Personal Interest: SUM – Example Usage</font></i></center><br>
+
+<table border="1" align="center">
+    <tr>
+      <td></td>
+      <th>D</th>
+      <th>E</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <th>How confident are you in gaining employment in your field after graduation?</th>
+      <th>How confident are you in acheiveing your career goals?</th>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+</table><br>
+<center><i><font size="2" color="grey">Table 20: Confidence and Personal Interest: SUM - Before</font></i></center><br>
+
+When SUM function is applied to columns D and E, the values in these cells are summed up. 
+<br><br>
+The sum of the values is then diaplayed in column M - 'SUM of confidence levels.'
+
+<br><br>
+<table border="1" align="center">
+    <tr>
+      <td></td>
+      <th>M</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <th>SUM of Confidence levels</th>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+</table><br>
+<center><i><font size="2" color="grey">Table 21: Confidence and Personal Interest: SUM - After</font></i></center><br>
+
+<br><hr>
+ <br>
+•	UNIQUE 
+<br><br>
+The UNIQUE function in Excel is used to extract distinct or unique values from a list or range of data, removing duplicates. This function is particularly useful when working with large datasets, as it helps summarize information efficiently by showing only the unique entries.
+<br><br>
+The basic syntax of the UNIQUE function is:
+<br><br>
+
+<table border="1" align="center"><th>=UNIQUE(array, [by_col], [exactly_once])</th></table><br>
+<center><i><font size="2" color="grey">Formula 15: Confidence and Personal Interest: UNIQUE - Syntax</font></i></center><br>
+
+<b>array:</b> The range of cells or array from which you want to extract unique values (mandatory).
+<br><br>
+<b>by_col:</b> A logical value (TRUE or FALSE).<br>
+FALSE (default): Extracts unique values row by row.<br>
+TRUE: Extracts unique values column by column.
+<br><br>
+<b>exactly_once:</b> A logical value (TRUE or FALSE).<br>
+FALSE (default): Returns all unique values.<br>
+TRUE: Returns only values that appear exactly once in the range.
+<br><br>
+Here, we use the UNIQUE function to remove duplicate values from the ‘SUM of Confidence levels’ column (i.e., column M) as:
+<br><br>
+ 
+<table border="1" align="center"><th>UNIQUE(M2:M57)</th></table><br>
+<center><i><font size="2" color="grey">Formula 16: Confidence and Personal Interest: UNIQUE - Example Usage</font></i></center><br>
+
+
+<table border="1" align="center">
+    <tr>
+      <td></td>
+      <th>M</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <th>SUM of Confidence levels</th>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>9</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>7</td>
+      </tr><tr>
+        <td>8</td>
+        <td>10</td>
+      </tr><tr>
+        <td>9</td>
+        <td>10</td>
+      </tr>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+</table><br>
+<center><i><font size="2" color="grey">Table 22: Confidence and Personal Interest: UNIQUE - Before</font></i></center><br>
+
+When UNIQUE function is applied to the range of cells - M2 to M57, it scans the range of cells and identifies all the distinct values – 8, 10, 7, 9, 6, 5. 
+<br><br>
+
+<table border="1" align="center">
+    <tr>
+      <td></td>
+      <th>N</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <th>CONFIDENCE LEVEL</th>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>5</td>
+    </tr>
+</table><br>
+<center><i><font size="2" color="grey">Table 23: Confidence and Personal Interest: UNIQUE - After</font></i></center><br>
+The distinct values are then displayed as the output in a new column or row depending on how the function is applied. Here the values are displayed in the new column N, which has been titled CONFIDENCE LEVEL.
+<br><hr>
+ <br>
+•	SORT
+<br><br>
+SORT returns a sorted array of the elements in an array or range. The returned array is the same shape as the provided array argument.
+<br><br>
+The basic syntax of the SORT function is:
+<br><br>
+<table border="1" align="center"><th>=SORT(array,[sort_index],[sort_order],[by_col])</th></table><br>
+<center><i><font size="2" color="grey">Formula 17: Confidence and Personal Interest: SORT - Syntax</font></i></center><br>
+
+<b>array</b> (Required): The range, or array to sort
+<br><br>
+<b>[sort_index]</b> (Optional): A number indicating the row or column to sort by
+<br><br>
+<b>[sort_order]</b> (Optional): A number indicating the desired sort order; 1 for ascending order (default), -1 for descending order
+<br><br>
+<b>[by_col]</b> (Optional): A logical value indicating the desired sort direction; FALSE to sort by row (default), TRUE to sort by column. 
+<br><br>
+Here, we use the SORT function to sort the values from the ‘SUM of Confidence levels’ column (i.e., column M) in ascending order: 
+<br><br>
+<table border="1" align="center"><th>SORT(M2:M7)</th></table><br>
+<center><i><font size="2" color="grey">Formula 18: Confidence and Personal Interest: SORT - Example Usage</font></i></center><br>
+
+
+<table border="1" align="center">
+    <tr>
+      <td></td>
+      <th>M</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <th>Confidence</th>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>5</td>
+    </tr>
+</table><br>
+<center><i><font size="2" color="grey">Table 24: Confidence and Personal Interest: SORT - Before</font></i></center><br>
+
+When SORT function is applied to the range of cells - M2 to M7, it scans the range of cells and sorts them in ascending order. 
+<br><br>
+<table border="1" align="center">
+    <tr>
+      <td></td>
+      <th>M</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <th>Confidence</th>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>10</td>
+    </tr>
+</table><br>
+<center><i><font size="2" color="grey">Table 25: Confidence and Personal Interest: SORT - After</font></i></center><br>
+
+The values are then displayed as the output in the same column. Here the values are displayed in column M, which has been titled CONFIDENCE LEVEL.
+<br><hr>
+<br>
+•	COUNTIFS
+<br><br>
+The COUNTIFS function applies criteria to cells across multiple ranges and counts the number of times all criteria are met
+<br><br>
+The basic syntax of the COUNTIFS function is:
+<br><br>
+<table border="1" align="center"><th>=COUNTIFS(criteria_range1, criteria1, [criteria_range2, criteria2]…)</th></table><br>
+<center><i><font size="2" color="grey">Formula 19: Confidence and Personal Interest: COUNTIFS - Syntax</font></i></center><br>
+<b>criteria_range1</b> (Required): The first range in which to evaluate the associated criteria.
+<br><br>
+<b>criteria1</b> (Required): The criteria in the form of a number, expression, cell reference, or text that define which cells will be counted. 
+<br><br>
+<b>criteria_range2, criteria2, ...</b>    (Optional): Additional ranges and their associated criteria. Up to 127 range/criteria pairs are allowed.
+<br><br>
+Here, we use the COUNTIFS function to count the number of occurrences of distinct values in a row, based on multiple criteria: 
+<br><br>
+<table border="1" align="center"><th>=COUNTIFS(A2:A57, “Yes”, B2:B57, C2)</th></table><br>
+<center><i><font size="2" color="grey">Formula 20: Confidence and Personal Interest: COUNTIFS – Example Usage</font></i></center><br>
+
+<table align="center" border="1">
+        <tr>
+            <td></td>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <th>Did you choose this degree based on personal interest?</th>
+            <th>SUM of confidence levels</th>
+            <th>Confidence Levels</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Yes</td>
+            <td>8</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Yes</td>
+            <td>8</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Yes</td>
+            <td>10</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>No</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>No</td>
+            <td>9</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Yes</td>
+            <td>7</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td></td>
+        </tr>
+    </table><br>
+<center><i><font size="2" color="grey">Table 26: Confidence and Personal Interest: COUNTIFS - Before</font></i></center><br>
+
+When COUNTIFS function is applied to the range of cells - A2 to A57 & B2 to B57, it scans the range of cells and counts all values that satisfy the given criteria. Then the autofill feature is used to apply the same function across a whole column.
+<br><br>
+<table align="center" border="1">
+        <tr>
+            <td></td>
+            <td>N</td>
+            <td>O</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <th>Confidence Levels</th>
+            <th>Did you choose this degree based on personal interest? YES</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>5</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>6</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>7</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>8</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>10</td>
+            <td>14</td>
+        </tr>
+    </table><br>
+<center><i><font size="2" color="grey">Table 27: Confidence and Personal Interest: COUNTIFS - After</font></i></center><br>
+
+
+<br><hr>
+
+<center><img width="60%" src="figures/3.4_1.png"></center><br>
+<center><i><font size="2" color="grey">Figure 8: Line Chart - Personal Interest and Confidence Levels</font></i></center><br>
+The Table was then visualized with the help of a Line Chart.
+This particular chart was used so it would be easy to visualize the change in responses as the confidence level varies. Line graphs are a powerful tool to analyze continuous data in a very simplistic manner.
+</p>
+
+
+
+</td>
+<td valign="top" width="50px">
+    <a href="3.3.html"><img width=20px src="icons/left.png"></a>
+    <a href="3.5.html"><img width=20px src="icons/right.png"></a>
+</td>
+</tr>
+</table>
+</font>
+</body>
+    
+</html>

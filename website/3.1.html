@@ -1,0 +1,574 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            An In-Depth Analysis on Educational and Career Goals
+        </title>
+    </head>
+        <body>
+<font face="Book Antiqua">
+<table width="100%" height="100%">
+<tr>
+<td width="375px" valign="top" bgcolor="e6e6fa">
+                <nav><br>
+                    <center>INDEX</center>
+                    <ul>
+                        <a href="1.1.html"><h4>Introduction</h4></a>
+                        <li><a href="1.1.html">1.1 Objective</a></li>
+                        <li><a href="1.2.html">1.2 Organization</a></li>
+                        <li><a href="1.3.html">1.3 Contributions</a></li>
+                    </ul>
+                    <ul>
+                        <a href="2.1.html"><h4>Data Organization</h4></a>
+                        <li><a href="2.1.html">2.1 Data Description</a></li>
+                        <li><a href="2.2.html">2.2 Technical Description</a></li>
+                        <li><a href="2.3.html">2.3 Workflow Diagram</a></li>
+                    </ul>
+                    <ul>
+                        <a href="3.1.html"><h4>Data Analysis</h4></a>
+                        
+                        <li><a href="3.1.html">3.1 Confidence and Skill</a></li>
+                        <li><a href="3.2.html">3.2 Gender and Post-Degree Choices</a></li>
+                        <li><a href="3.3.html">3.3 Gender and External Influence</a></li>
+                        <li><a href="3.4.html">3.4 Confidence and Personal Interest</a></li>
+                        <li><a href="3.5.html">3.5 Charts Used:</a></li>
+                      </ul>
+                    <ul>
+                        <a href="4.1.html"><h4>Inferences and Key Insights</h4></a>
+                        
+                        <li><a href="4.1.html">4.1 Confidence and Skill</a></li>
+                        <li><a href="4.2.html">4.2 Gender and Post-Degree Choices</a></li>
+                        <li><a href="4.3.html">4.3 Gender and External Influence</a></li>
+                        <li><a href="4.4.html">4.4 Confidence and Personal Interest</a></li>
+                    </ul>
+                    <ul>
+                        <a href="5.1.html"><h4>Conclusion</h4></a>
+                    </ul>
+                    <ul>
+                        <a href="6.1.html"><h4>References</h4></a>
+                        
+                    </ul>
+            </nav>
+</td>
+<td width="50px"></td>
+<td valign="top">
+<!-- CONTENT FROM HERE-->
+<h2>Chapter 3<br><br> Data Analysis</h2><br>
+<h4>3.1 Correlation Between Confidence and Skill</h4>
+<p align="justify">
+    This section examines the relationship between students’ confidence levels and the alignment of their skills with their current degree. The goal is to determine how skill alignment impacts students’ confidence in gaining employment in their field after graduation and achieving their overall career goals.
+<br><br>
+The analysis categorizes students into three groups based on their reported skill alignment (“Yes”, “Somewhat” and “No”) and compares their confidence levels. This allows us to identify trends and insights into how perceived skill readiness influences career confidence.
+<br><br>
+To explore this topic, the following questions from the survey were tackled:<br>
+•	Do you feel your skills align with your current degree?<br>
+•	How confident are you in gaining employment in your field after graduation?<br>
+•	How confident are you about achieving your career goals?
+<br><br>
+The responses recorded were summarized as follows:
+<br><br>
+<table border="1" align="center">
+    <tr>
+      <th>Confidence</th>
+      <th>Do you feel your skills align with your current degree? YES</th>
+      <th>Do you feel your skills align with your current degree? SOMEWHAT</th>
+      <th>Do you feel your skills align with your current degree? NO</th>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>1</td>
+      <td>1</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>1</td>
+      <td>3</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>7</td>
+      <td>4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>10</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+</table><br>
+<center><i><font size="2" color="grey">Table 3: Confidence and Skill Alignment</font></i></center><br>
+Firstly, the confidence level of each respondent regarding gaining employment and achieving career goals was summed up and stored in a different column.
+ <br><br>
+This table was created using the following functions:
+<br><br>
+•	SUM 
+<br><br>
+The SUM function in Excel is used to calculate the total of two or more numbers, either from individual cells or a range of cells. It’s one of the most basic and widely used functions for arithmetic operations.
+<br><br>
+The syntax of the SUM function is: 
+
+
+<br><br>
+<table border="1" align="center"><th>=SUM(number1, [number2], …)</th></table><br>
+<center><i><font size="2" color="grey">Formula 1: Confidence and Skill: SUM – Syntax</font></i></center><br>
+
+<b>number1:</b> The first value or cell reference to include in the sum.
+<br><br>
+<b>number2, ...:</b> Additional values or cell references (optional).
+<br><br>
+Here, we use the SUM function to combine employment and career goal confidence - to measure the total confidence for each respondent as ‘Sum of Confidence levels’ in column G as:
+
+<br><br>
+<table border="1" align="center"><th>=SUM(E2, F2)</th></table><br>
+<center><i><font size="2" color="grey">Formula 2: Confidence and Skill: SUM – Example Usage</font></i></center><br>
+
+<table border="1" align="center">
+    <tr>
+      <td></td>
+      <th>E</th>
+      <th>F</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <th>How confident are you in gaining employment in your field after graduation?</th>
+      <th>How confident are you in acheiveing your career goals?</th>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+</table><br>
+<center><i><font size="2" color="grey">Table 4: Confidence and Skill: SUM - Before</font></i></center><br>
+
+When SUM function is applied to certain cells, the values in these cells are summed up. Then the autofill feature is used to apply the same function across a whole column.
+
+<br><br>
+<table border="1" align="center">
+    <tr>
+      <td></td>
+      <th>G</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <th>Sum of Confidence levels</th>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+</table><br>
+<center><i><font size="2" color="grey">Table 5: Confidence and Skill: SUM - After</font></i></center><br>
+The sum of the values is then displayed in column G titled ‘Sum of confidence levels.’
+<br><hr>
+ <br>
+•	UNIQUE 
+<br><br>
+The UNIQUE function in Excel is used to extract distinct or unique values from a list or range of data, removing duplicates. This function is particularly useful when working with large datasets, as it helps summarize information efficiently by showing only the unique entries.
+<br><br>
+The basic syntax of the UNIQUE function is:
+<br><br>
+
+<table border="1" align="center"><th>=UNIQUE(array, [by_col], [exactly_once])</th></table><br>
+<center><i><font size="2" color="grey">Formula 3: Confidence and Skill: UNIQUE - Syntax</font></i></center><br>
+
+<b>array:</b> The range of cells or array from which you want to extract unique values (mandatory).
+<br><br>
+<b>by_col:</b> A logical value (TRUE or FALSE).<br>
+FALSE (default): Extracts unique values row by row.<br>
+TRUE: Extracts unique values column by column.
+<br><br>
+<b>exactly_once:</b> A logical value (TRUE or FALSE).<br>
+FALSE (default): Returns all unique values.<br>
+TRUE: Returns only values that appear exactly once in the range.
+<br><br>
+Here, we use the UNIQUE function to remove duplicate values from the ‘Sum of Confidence levels’ column (i.e., column G) as:
+<br><br>
+ 
+<table border="1" align="center"><th>UNIQUE(G2:G57)</th></table><br>
+<center><i><font size="2" color="grey">Formula 4: Confidence and Skill: UNIQUE Example Usage</font></i></center><br>
+
+
+<table border="1" align="center">
+    <tr>
+      <td></td>
+      <th>G</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <th>Sum of Confidence levels</th>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+</table><br>
+<center><i><font size="2" color="grey">Table 6: Confidence and Skill: UNIQUE - Before</font></i></center><br>
+
+When UNIQUE function is applied to the range of cells - G2 to G57, it scans the range of cells and identifies all the distinct values – 8, 10, 7, 9, 6, 5. 
+<br><br>
+
+<table border="1" align="center">
+    <tr>
+      <td></td>
+      <th>I</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <th>Confidence</th>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>5</td>
+    </tr>
+</table><br>
+<center><i><font size="2" color="grey">Table 7: Confidence and Skill: UNIQUE - After</font></i></center><br>
+The distinct values are then displayed as the output in a new column or row depending on how the function is applied. Here the values are displayed in the new column I, which has been titled Confidence.
+<br><hr>
+ <br>
+•	SORT
+<br><br>
+SORT returns a sorted array of the elements in an array or range. The returned array is the same shape as the provided array argument.
+<br><br>
+The basic syntax of the SORT function is:
+<br><br>
+<table border="1" align="center"><th>=SORT(array,[sort_index],[sort_order],[by_col])</th></table><br>
+<center><i><font size="2" color="grey">Formula 5: Confidence and Skill: SORT - Syntax</font></i></center><br>
+
+<b>array</b> (Required): The range, or array to sort
+<br><br>
+<b>[sort_index]</b> (Optional): A number indicating the row or column to sort by
+<br><br>
+<b>[sort_order]</b> (Optional): A number indicating the desired sort order; 1 for ascending order (default), -1 for descending order
+<br><br>
+<b>[by_col]</b> (Optional): A logical value indicating the desired sort direction; FALSE to sort by row (default), TRUE to sort by column. 
+<br><br>
+Here, we use the SORT function to sort the values from the ‘Sum of Confidence levels’ column (i.e., column I) in ascending order: 
+<br><br>
+<table border="1" align="center"><th>SORT(I2:I7)</th></table><br>
+<center><i><font size="2" color="grey">Formula 6: Confidence and Skill: SORT - Example Usage</font></i></center><br>
+
+
+<table border="1" align="center">
+    <tr>
+      <td></td>
+      <th>I</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <th>Confidence</th>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>5</td>
+    </tr>
+</table><br>
+<center><i><font size="2" color="grey">Table 8: Confidence and Skill: SORT - Before</font></i></center><br>
+
+When SORT function is applied to the range of cells - I2 to I7, it scans the range of cells and sorts them in ascending order. 
+<br><br>
+<table border="1" align="center">
+    <tr>
+      <td></td>
+      <th>I</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <th>Confidence</th>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>10</td>
+    </tr>
+</table><br>
+<center><i><font size="2" color="grey">Table 9: Confidence and Skill: SORT - After</font></i></center><br>
+
+The values are then displayed as the output in the same column. Here the values are displayed in column I, which has been titled Confidence.
+<br><hr>
+<br>
+•	COUNTIFS
+<br><br>
+The COUNTIFS function applies criteria to cells across multiple ranges and counts the number of times all criteria are met
+<br><br>
+The basic syntax of the COUNTIFS function is:
+<br><br>
+<table border="1" align="center"><th>=COUNTIFS(criteria_range1, criteria1, [criteria_range2, criteria2]…)</th></table><br>
+<center><i><font size="2" color="grey">Formula 7: Confidence and Skill: COUNTIFS - Syntax</font></i></center><br>
+<b>criteria_range1</b> (Required): The first range in which to evaluate the associated criteria.
+<br><br>
+<b>criteria1</b> (Required): The criteria in the form of a number, expression, cell reference, or text that define which cells will be counted. 
+<br><br>
+<b>criteria_range2, criteria2, ...</b>    (Optional): Additional ranges and their associated criteria. Up to 127 range/criteria pairs are allowed.
+<br><br>
+Here, we use the COUNTIFS function to count the number of occurrences of distinct values in a row, based on multiple criteria: 
+<br><br>
+<table border="1" align="center"><th>=COUNTIFS(A2:A57, “Yes”, B2:B57, C2)</th></table><br>
+<center><i><font size="2" color="grey">Formula 8: Confidence and Skill: COUNTIFS - Example Usage</font></i></center><br>
+
+<table align="center" border="1">
+        <tr>
+            <td></td>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <th>Do you feel your skills align with your current degree?</th>
+            <th>Sum of confidence levels</th>
+            <th>Confidence Levels</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Yes</td>
+            <td>8</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Yes</td>
+            <td>8</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Yes</td>
+            <td>10</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Somewhat</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>No</td>
+            <td>9</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Somewhat</td>
+            <td>7</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td></td>
+        </tr>
+    </table><br>
+<center><i><font size="2" color="grey">Table 10: Confidence and Skill: COUNTIFS – Before</font></i></center><br>
+
+When COUNTIFS function is applied to the range of cells - A2 to A57 & B2 to B57, it scans the range of cells and counts all values that satisfy the given criteria. Then the autofill feature is used to apply the same function across a whole column.
+<br><br>
+<table align="center" border="1">
+        <tr>
+            <td></td>
+            <td>C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <th>Confidence Levels</th>
+            <th>Do you feel your skills align with your current degree? YES</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>5</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>6</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>7</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>8</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>9</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>10</td>
+            <td>10</td>
+        </tr>
+    </table><br>
+<center><i><font size="2" color="grey">Table 11: Confidence and Skill: COUNTIFS - After</font></i></center><br>
+
+The values are then displayed as the output in a new column or row depending on how the function is applied. Here the values are displayed in the new column D. 
+<br><hr>
+ 
+
+<center><img width="60%" src="figures/3.1_1.png"></center><br>
+<center><i><font size="2" color="grey">Figure 4: Line Chart - Confidence and Skill</font></i></center><br>
+
+The Table was then visualized with the help of a Line Chart. This chart was used so it would be easy to visualize the change in responses as the confidence level varies. Line graphs are a powerful tool to analyze continuous data in a very simplistic manner.
+<br><br>
+</p>
+
+</td>
+<td valign="top" width="50px">
+    <a href="2.3.html"><img width=20px src="icons/left.png"></a>
+    <a href="3.2.html"><img width=20px src="icons/right.png"></a>
+</td>
+</tr>
+</table>
+</font>
+</body>
+    
+</html>

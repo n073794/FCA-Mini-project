@@ -1,0 +1,222 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            An In-Depth Analysis on Educational and Career Goals
+        </title>
+    </head>
+        <body>
+<font face="Book Antiqua">
+<table width="100%" height="100%">
+<tr>
+<td width="375px" valign="top" bgcolor="e6e6fa">
+                <nav><br>
+                    <center>INDEX</center>
+                    <ul>
+                        <a href="1.1.html"><h4>Introduction</h4></a>
+                        <li><a href="1.1.html">1.1 Objective</a></li>
+                        <li><a href="1.2.html">1.2 Organization</a></li>
+                        <li><a href="1.3.html">1.3 Contributions</a></li>
+                    </ul>
+                    <ul>
+                        <a href="2.1.html"><h4>Data Organization</h4></a>
+                        <li><a href="2.1.html">2.1 Data Description</a></li>
+                        <li><a href="2.2.html">2.2 Technical Description</a></li>
+                        <li><a href="2.3.html">2.3 Workflow Diagram</a></li>
+                    </ul>
+                    <ul>
+                        <a href="3.1.html"><h4>Data Analysis</h4></a>
+                        
+                        <li><a href="3.1.html">3.1 Confidence and Skill</a></li>
+                        <li><a href="3.2.html">3.2 Gender and Post-Degree Choices</a></li>
+                        <li><a href="3.3.html">3.3 Gender and External Influence</a></li>
+                        <li><a href="3.4.html">3.4 Confidence and Personal Interest</a></li>
+                        <li><a href="3.5.html">3.5 Charts Used:</a></li>
+                    </ul>
+                    <ul>
+                        <a href="4.1.html"><h4>Inferences and Key Insights</h4></a>
+                        
+                        <li><a href="4.1.html">4.1 Confidence and Skill</a></li>
+                        <li><a href="4.2.html">4.2 Gender and Post-Degree Choices</a></li>
+                        <li><a href="4.3.html">4.3 Gender and External Influence</a></li>
+                        <li><a href="4.4.html">4.4 Confidence and Personal Interest</a></li>
+                    </ul>
+                    <ul>
+                        <a href="5.1.html"><h4>Conclusion</h4></a>
+                    </ul>
+                    <ul>
+                        <a href="6.1.html"><h4>References</h4></a>
+                        
+                    </ul>
+            </nav>
+</td>
+<td width="50px"></td>
+<td valign="top">
+<!-- CONTENT FROM HERE-->
+<h4>3.3 Correlation Between Gender and External Influence</h4>
+<p align="justify">
+    This topic explores how gender influences the degree to which external factors impact students' choice of degree programs. By analyzing survey data, the study aims to identify any significant gender-based differences in how external influences shape academic decisions, providing insights into the role of gender in educational choices and the potential need for targeted support in career counseling.
+<br><br>
+To explore this topic, the following questions from the survey were tackled:
+<br>•	Was your degree choice influenced by recommendations from others?
+<br>•	Did you consider any alternative degree programs?
+<br><br>
+The responses for these questions were summarized in a table using formulas:
+
+<br><br>
+<table align="center" border="1">
+        <tr>
+            <th>What is your gender?</th>
+            <th>Was your degree choice influenced by recommendations from others? YES</th>
+            <th>Was your degree choice influenced by recommendations from others? NO</th>
+            <th>Did you consider any alternative degree programs? YES</th>
+            <th>Did you consider any alternative degree programs? NO</th>
+        </tr>
+        <tr>
+            <td>Male</td>
+            <td>13</td>
+            <td>21</td>
+            <td>16</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Female</td>
+            <td>13</td>
+            <td>9</td>
+            <td>13</td>
+            <td>9</td>
+        </tr>
+    </table><br>
+<center><i><font size="2" color="grey">Table 13: Gender and External Influence</font></i></center><br>
+<br>The formula used to calculate data in this table is
+<br><br>•	COUNTIFS
+<br><br>
+The COUNTIFS function applies criteria to cells across multiple ranges and counts the number of times all criteria are met.
+<br><br>
+
+
+The basic syntax of the COUNTIFS function is:
+
+
+<br><br>
+<table border="1" align="center"><th>=COUNTIFS(criteria_range1, criteria1, [criteria_range2, criteria2]…)</th></table><br>
+<center><i><font size="2" color="grey">Formula 11: Gender and External Influence: COUNTIFS - Syntax</font></i></center>
+<br><br>
+The COUNTIFS function syntax has the following arguments:
+<br><br>
+<b>criteria_range1</b> (Required): The first range in which to evaluate the associated criteria.
+<br><br>
+<b>criteria1</b> (Required): The criteria in the form of a number, expression, cell reference, or text that define which cells will be counted. 
+<br><br>
+<b>criteria_range2, criteria2, ...</b> (Optional): Additional ranges and their associated criteria. Up to 127 range/criteria pairs are allowed.
+<br><br>
+Here, we use the COUNTIFS function to count the number of occurrences of distinct values in a row, based on multiple criteria: 
+
+
+<br><br>
+<table border="1" align="center"><th>=COUNTIFS(A2:A57, M2, B2:B57, “Yes”)</th></table><br>
+<center><i><font size="2" color="grey">Formula 12: Gender and External Influence: COUNTIFS - Example Usage</font></i></center>
+
+<br><br>
+     <table align="center" border="1">
+        <tr>
+            <td></td>
+            <td>A</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <th>What is your gender?</th>
+            <th>Do you plan to work in the same field as your degree?</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Male</td>
+            <td>Maybe</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Male</td>
+            <td>Maybe</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Female</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Female</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Female</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Male</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+        </tr>
+    </table><br>
+<center><i><font size="2" color="grey">Table 14: Gender and External Influence: COUNTIFS – Before</font></i></center>
+<br><br>
+When COUNTIFS function is applied to the range of cells - A2 to A57 & B2 to B57, it scans the range of cells and counts all values that satisfy the given criteria. Then the autofill feature is used to apply the same function across a whole column.
+<br><br>
+
+<table align="center" border="1">
+        <tr>
+            <td></td>
+            <td>M</td>
+            <td>N</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <th>Gender</th>
+            <th>Do you plan to work in the same field as your degree? YES</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Male</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Female</td>
+            <td>14</td>
+        </tr>
+    </table><br>
+
+<center><i><font size="2" color="grey">Table 15: Gender and External Influence: COUNTIFS – Before</font></i></center>
+<br><br>
+The values are then displayed as the output in a new column or row depending on how the function is applied. Here the values are displayed in the new column N. 
+<br>The rest of the table was completed using the auto-fill feature.
+<br>The COUNTIFS function is used here as it applies criteria to cells across multiple ranges and counts the number of times all criteria are met. This allows us to count responses which fulfill multiple criteria, which are in this case gender and response type. 
+<br><br>
+
+<center><img width="60%" src="figures/3.3_1.png"></center><br>
+<br><center><i><font size="2" color="grey">Figure 5: Stacked Bar Chart - Gender and External Influences</font></i></center>
+<br><br>The Table was then visualized with the help of a 100% stacked bar chart. This chart was used so it would be easier to visualize and compare the ratios of responses of each gender as comparing counts using a clustered chart would be less helpful due to the uneven distribution of male and female responses.
+</p>
+
+
+
+
+</td>
+<td valign="top" width="50px">
+    <a href="3.2.html"><img width=20px src="icons/left.png"></a>
+    <a href="3.4.html"><img width=20px src="icons/right.png"></a>
+</td>
+</tr>
+</table>
+</font>
+</body>
+    
+</html>
